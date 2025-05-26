@@ -1,0 +1,17 @@
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb_container
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: admin
+      MARIADB_DATABASE: midatabase
+      MARIADB_USER: miusuario
+      MARIADB_PASSWORD: miclave
+    volumes:
+      - ./  mariadb_data:/var/lib/mysql
+    ports:
+      - "3307:3306"
+
+volumes:
+  mariadb_data:
