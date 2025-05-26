@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>w2m.academy.plexmind</groupId>
-    <artifactId>rol-service</artifactId>
+    <artifactId>rolservice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>prueba</name>
     <description>prueba</description>
