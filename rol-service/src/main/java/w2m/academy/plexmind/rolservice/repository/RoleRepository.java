@@ -6,8 +6,4 @@ import org.springframework.stereotype.Repository;
 import w2m.academy.plexmind.rolservice.entity.Role;
 
 @Repository
-public interface RoleRepository extends JpaRepository<Role, Integer> {
-
-    // Puedes agregar métodos personalizados si lo necesitas, por ejemplo:
-    Role findByName(String name);
-}
+public interface RoleRepository extends JpaRepository<Role, Integer> {}

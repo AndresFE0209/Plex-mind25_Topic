@@ -1,9 +1,15 @@
 package w2m.academy.plexmind.rolservice.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @Table(name = "role")
+@NoArgsConstructor
+@Getter
+@Setter
 public class Role {
 
     @Id
@@ -14,27 +20,7 @@ public class Role {
     @Column(name = "role_name", nullable = false, length = 20)
     private String name;
 
-    // Constructores
-    public Role() {}
-
     public Role(String name) {
-        this.name = name;
-    }
-
-    // Getters y setters
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
         this.name = name;
     }
 
