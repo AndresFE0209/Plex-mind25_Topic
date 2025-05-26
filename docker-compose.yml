@@ -9,9 +9,10 @@ services:
       MARIADB_USER: miusuario
       MARIADB_PASSWORD: miclave
     volumes:
-      - ./  mariadb_data:/var/lib/mysql
+      - ./docker/volumes/mariadb_data:/var/lib/mysql
+      - ./docker/mariadb:/docker-entrypoint-initdb.d
     ports:
-      - "3307:3306"
+      - "3306:3306"
 
 volumes:
   mariadb_data:
